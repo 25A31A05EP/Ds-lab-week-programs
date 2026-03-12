@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void swapValue(int a,int b){
+    int temp=a;
+    a=b;
+    b=temp;
+    cout<<"After swap (call by value): "<<a<<" "<<b<<endl;
+}
+
+void swapRef(int &a,int &b){
+    int temp=a;
+    a=b;
+    b=temp;
+}
+
+int main(){
+    int a=10,b=20;
+
+    swapValue(a,b);
+
+    swapRef(a,b);
+    cout<<"After swap (call by reference): "<<a<<" "<<b;
+
+    return 0;
+}
