@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Name: Mounika" << endl;
+    cout << "Branch: CSE" << endl;
+    cout << "Roll No: 12345" << endl;
+    cout << "Section: D" << endl;
+    return 0;
+}
