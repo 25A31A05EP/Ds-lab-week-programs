@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a[5], *p, i;
+
+    p=a;
+
+    cout<<"Enter elements: ";
+    for(i=0;i<5;i++)
+        cin>>*(p+i);
+
+    cout<<"Elements are: ";
+    for(i=0;i<5;i++)
+        cout<<*(p+i)<<" ";
+
+    return 0;
+}
