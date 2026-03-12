@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+private:
+    int id;
+
+public:
+    // Constructor
+    Student(int i)
+    {
+        id = i;
+        cout << "Constructor called. Student ID = " << id << endl;
+    }
+
+    // Destructor
+    ~Student()
+    {
+        cout << "Destructor called. Object destroyed." << endl;
+    }
+};
+
+int main()
+{
+    Student s1(101);   // Constructor is called automatically
+
+    return 0;          // Destructor is called when program ends
+}
