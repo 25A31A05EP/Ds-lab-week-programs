@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,fact=1,i;
+
+    cout<<"Enter number: ";
+    cin>>n;
+
+    switch(n>=0){
+        case 1:
+            for(i=1;i<=n;i++)
+                fact=fact*i;
+            cout<<"Factorial = "<<fact;
+            break;
+
+        default:
+            cout<<"Invalid number";
+    }
+
+    return 0;
+}
